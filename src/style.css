@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "tailwindcss-intersect";
+@import "tailwindcss-animated";
+@plugin "tailwindcss-motion";
+
+@theme {
+    --color-iravi: #fffdf2;
+    --color-iravi-dark: #e6d385;
+    --color-Luminous: #f0ebce;
+    --color-natural-dark: #131b17;
+    --color-natural-green: #4e6c50;
+    --color-light-sub-dark:#444943;
+    --color-semi-dark: #D0D4D2;
+    --color-green-dark:#395144;
+  --text-90: 5.625rem; 
+  --text-56: 3.5rem;
+  --space:4rem;
+  /* --space:4.5rem; */
+  }
+
+@layer base {
+.max-w-screen-3xl {
+  max-width: 90rem;
+  
+}
+  .rounded-20{
+    border-radius: 20px;
+  }
+
+}
