@@ -69,11 +69,13 @@
     --color-iravi: #fffdf2;
     --color-iravi-dark: #e6d385;
     --color-Luminous: #f0ebce;
-    --color-natural-dark: #131b17;
-    --color-natural-green: #4e6c50;
+    --color-natural-dark: #111111;
+    --color-natural-green: #4A8272;
+    --color-gold-dark: #C9862B;
     --color-light-sub-dark: #444943;
     --color-semi-dark: #D0D4D2;
-    --color-green-dark: #395144;
+    --color-green-sub: #5D5D5D;
+    --color-green-dark: #30534A;
     --text-90: 5.625rem;
     --text-56: 3.5rem;
     --space: 4rem;
@@ -480,6 +482,9 @@
   .w-\[85vw\] {
     width: 85vw;
   }
+  .w-\[309px\] {
+    width: 309px;
+  }
   .w-auto {
     width: auto;
   }
@@ -756,6 +761,9 @@
   .bg-cyan-500 {
     background-color: var(--color-cyan-500);
   }
+  .bg-gold-dark {
+    background-color: var(--color-gold-dark);
+  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
@@ -816,9 +824,6 @@
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-\[url\(\'\.\.\/images\/ATTVA-CONTACT-FORM-2\.jpg\'\)\] {
-    background-image: url('../images/ATTVA-CONTACT-FORM-2.jpg');
   }
   .bg-\[url\(\'\.\.\/images\/HOMEPAGESLIDER4\.webp\'\)\] {
     background-image: url('../images/HOMEPAGESLIDER4.webp');
@@ -882,9 +887,6 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
-  .p-12 {
-    padding: calc(var(--spacing) * 12);
-  }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
   }
@@ -896,6 +898,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-\[10px\] {
     padding-inline: 10px;
@@ -1091,6 +1096,9 @@
   .text-black {
     color: var(--color-black);
   }
+  .text-gold-dark {
+    color: var(--color-gold-dark);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -1099,6 +1107,9 @@
   }
   .text-gray-700 {
     color: var(--color-gray-700);
+  }
+  .text-green-sub {
+    color: var(--color-green-sub);
   }
   .text-light-sub-dark {
     color: var(--color-light-sub-dark);
@@ -1151,15 +1162,8 @@
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .invert-100 {
-    --tw-invert: invert(100%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .sepia {
     --tw-sepia: sepia(100%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition {
@@ -1620,16 +1624,6 @@
       border-bottom-color: var(--color-semi-dark);
     }
   }
-  .md\:bg-white {
-    @media (width >= 48rem) {
-      background-color: var(--color-white);
-    }
-  }
-  .md\:bg-white\! {
-    @media (width >= 48rem) {
-      background-color: var(--color-white) !important;
-    }
-  }
   .md\:bg-none {
     @media (width >= 48rem) {
       background-image: none;
@@ -2032,6 +2026,9 @@
   }
   .rounded-20 {
     border-radius: 20px;
+  }
+  body {
+    color: var(--color-natural-dark);
   }
 }
 @layer base {
