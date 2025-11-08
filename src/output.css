@@ -1699,6 +1699,11 @@
       text-align: end;
     }
   }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
+    }
+  }
   .md\:text-start {
     @media (width >= 48rem) {
       text-align: start;
