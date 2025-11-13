@@ -4,12 +4,12 @@
 @plugin "tailwindcss-motion";
 
 @theme {
-    --color-iravi: #fffdf2;
-    --color-iravi-dark: #e6d385;
+    --color-iravi: #30534A;/*fffdf2*/
+    --color-iravi-dark: #30534A;
     --color-Luminous: #f0ebce;
-    --color-natural-dark: #111111; /* old: #1A1A1A */
+    --color-natural-dark: #30534A; /* old: #1A1A1A */
     --color-natural-green: #4A8272; /* old: #B88A5A*/
-     --color-gold-dark:#C9862B;
+    --color-gold-dark:#C9862B;
     --color-light-sub-dark:#444943;
     --color-semi-dark: #D0D4D2;
     --color-green-sub:#5D5D5D;
@@ -33,4 +33,44 @@
   body{
     color: var(--color-natural-dark);
   }
+  menu ul li a{
+    @apply text-white;
+       
+  }
+  nav > button.bg-iravi-dark,
+    footer * button.bg-iravi-dark {
+    @apply !bg-white ;
+    color: var(--color-gold-dark) !important;
+  }
+  button.bg-iravi-dark{
+    @apply !text-white ;
+
+  }
+  .font-redaction{
+    color: var(--color-gold-dark) !important;
+  }
+  .bg-Luminous.py-10{
+background-color: var(--color-iravi-dark) !important;
+color: white !important;
+  }
+  .bg-Luminous.py-10 * span{
+    color: white !important;
+
+  }
+.bg-Luminous.py-10 * span.bg-natural-green{
+@apply !bg-white;
 }
+
+  .bg-Luminous.py-10 * h1,
+  .bg-Luminous.py-10 * h2,
+  .bg-Luminous.py-10 * h2 + p,
+  .bg-Luminous.py-10 * h3,
+  .bg-Luminous.py-10 * h3 + p{
+    color: white !important;
+  }
+ 
+ .h-1.bg-light-sub-dark{
+  background-color: var(--color-gold-dark) !important;
+ }
+}
+
