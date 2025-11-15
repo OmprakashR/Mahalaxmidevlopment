@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-pink-200: oklch(89.9% 0.061 343.231);
@@ -721,6 +722,9 @@
   }
   .border-slate-200 {
     border-color: var(--color-slate-200);
+  }
+  .border-b-amber-50 {
+    border-bottom-color: var(--color-amber-50);
   }
   .border-b-semi-dark {
     border-bottom-color: var(--color-semi-dark);
@@ -2004,9 +2008,6 @@
   }
   .rounded-20 {
     border-radius: 20px;
-  }
-  body {
-    color: var(--color-natural-dark);
   }
   menu ul li a {
     color: var(--color-white);

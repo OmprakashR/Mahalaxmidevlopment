@@ -14,9 +14,9 @@
     --color-semi-dark: #D0D4D2;
     --color-green-sub:#5D5D5D;
     --color-green-dark:#30534A;
-  --text-90: 5.625rem; 
-  --text-56: 3.5rem;
-  --space:4rem;
+    --text-90: 5.625rem; 
+    --text-56: 3.5rem;
+     --space:4rem;
   /* --space:4.5rem; */
   }
 
@@ -31,7 +31,7 @@
 
 
   body{
-    color: var(--color-natural-dark);
+    
   }
   menu ul li a{
     @apply text-white;

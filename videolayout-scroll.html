@@ -20,10 +20,11 @@
   <!-- Add Swiper.js CSS -->
 </head>
 
-<body class="bg-[#ffff0] text-natural-dark">
+<body class="bg-[#ffff0] ">
   <!--header section-->
-<header id="main-header" class="bg-transparent p-2 md:block w-full fixed top-0 z-50 transition-all duration-500 ease-in-out
-">    <nav class="flex justify-between items-center max-w-screen-3xl px-3 md:px-(--space) mx-auto">
+  <header id="main-header" class="bg-transparent p-2 md:block w-full fixed top-0 z-50 transition-all duration-500 ease-in-out
+">
+    <nav class="flex justify-between items-center max-w-screen-3xl px-3 md:px-(--space) mx-auto">
       <div class="relative">
 
         <img src="./images/MAhalaxmi-Infra-LOGO.png" alt="MAhalaxmi-Infra" class="w-32 h-full" />
@@ -33,7 +34,7 @@
       <!-- Desktop Menu -->
       <div class="hidden md:block">
         <menu>
-           <ul class="flex gap-8">
+          <ul class="flex gap-8">
             <li><a href="about.html" class="text-sm text-white uppercase menu-link">About</a></li>
             <li><a href="project.html" class="text-sm text-white uppercase menu-link">Project</a></li>
             <li><a href="event.html" class="text-sm text-white uppercase menu-link">Events</a></li>
@@ -90,7 +91,8 @@
       </video>
       <!-- Fullscreen Icon -->
       <button id="fullscreenButton"
-        class="absolute bottom-40 right-18 bg-white/60 hover:bg-white  cursor-pointer transition-all  ease-linear p-2 rounded-full shadow-md" style="bottom: 40px;">
+        class="absolute bottom-40 right-18 bg-white/60 hover:bg-white  cursor-pointer transition-all  ease-linear p-2 rounded-full shadow-md"
+        style="bottom: 40px;">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 9.99739C6.01447 8.29083 6.10921 7.35004 6.72963 6.72963C7.35004 6.10921 8.29083 6.01447 9.99739 6"
             stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
@@ -1239,8 +1241,8 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
       transition: width 0.5s;
     }
   </style>
-<script>
-  const header = document.getElementById('main-header');
+  <script>
+    const header = document.getElementById('main-header');
     const menuLinks = document.querySelectorAll('.menu-link');
 
     window.addEventListener('scroll', function () {
@@ -1268,7 +1270,7 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
         });
       }
     });
-</script>
+  </script>
 </body>
 
 </html>
